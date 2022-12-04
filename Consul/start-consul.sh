@@ -4,7 +4,7 @@
 
 docker pull consul:1.13.3
 
-string=$( docker ps | grep 'consul-node' )
+string=$( docker ps -a | grep 'consul-node' )
 len=`expr length "$string"`
 
 if [[ $len -gt 0 ]]

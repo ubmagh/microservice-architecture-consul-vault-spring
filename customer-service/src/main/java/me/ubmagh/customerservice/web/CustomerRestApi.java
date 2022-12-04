@@ -13,8 +13,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
-@RestController
-@AllArgsConstructor
+// @RestController
+// @AllArgsConstructor
 public class CustomerRestApi {
 
     private CustomerService customerService;

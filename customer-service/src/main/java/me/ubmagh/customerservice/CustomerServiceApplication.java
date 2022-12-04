@@ -1,7 +1,6 @@
 package me.ubmagh.customerservice;
 
 import me.ubmagh.customerservice.dtos.requests.CustomerRequestDTO;
-import me.ubmagh.customerservice.mappers.CustomerMapper;
 import me.ubmagh.customerservice.services.CustomerService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
