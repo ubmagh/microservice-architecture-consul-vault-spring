@@ -11,6 +11,7 @@
         <module name="inventory-service" />
         <module name="config-service" />
         <module name="gateway" />
+        <module name="billing-service" />
       </profile>
       <profile name="Annotation profile for customer-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -25,6 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="billing-service" target="17" />
       <module name="config-service" target="17" />
       <module name="customer-service" target="17" />
       <module name="gateway" target="17" />
@@ -34,6 +36,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billing-service" options="-parameters" />
       <module name="config-service" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="gateway" options="-parameters" />
