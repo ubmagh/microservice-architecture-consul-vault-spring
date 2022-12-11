@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class OderRestController {
+public class OrderRestController {
 
     private OrderRepository orderRepository;
     private ProductItemRepository productItemRepository;
     private CustomerRestClientService customerRestClientService;
     private InventoryRestClientService inventoryRestClientService;
 
-    public OderRestController(OrderRepository orderRepository, ProductItemRepository productItemRepository, CustomerRestClientService customerRestClientService, InventoryRestClientService inventoryRestClientService) {
-        this.orderRepository = orderRepository;
+    public OrderRestController(OrderRepository orderRepository, ProductItemRepository productItemRepository, CustomerRestClientService customerRestClientService, InventoryRestClientService inventoryRestClientService) {
+           this.orderRepository = orderRepository;
         this.productItemRepository = productItemRepository;
         this.customerRestClientService = customerRestClientService;
         this.inventoryRestClientService = inventoryRestClientService;
@@ -37,5 +37,4 @@ public class OderRestController {
         });
         return order;
     }
-
 }

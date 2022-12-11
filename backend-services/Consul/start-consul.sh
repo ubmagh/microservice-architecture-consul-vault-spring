@@ -9,7 +9,7 @@ len=`expr length "$string"`
 
 if [[ $len -gt 0 ]]
 then
-  echo "👉 deleting existing consul container & volume"
+  echo "👉 deleting existing consul   container & volume"
   docker stop consul-node
   docker rm -v consul-node
 fi

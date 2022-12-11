@@ -8,5 +8,4 @@ public interface ProductProjection {
     public double getPrice();
     public String getName();
     public int getQuantity();
-
 }

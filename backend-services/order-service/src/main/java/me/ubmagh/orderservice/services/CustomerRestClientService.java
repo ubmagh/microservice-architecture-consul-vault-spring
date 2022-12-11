@@ -10,11 +10,9 @@ import java.util.List;
 
 @FeignClient(name = "customer-service")
 public interface CustomerRestClientService {
-
     @GetMapping("/customers/{id}?projection=full")
     public Customer customerById( @PathVariable String id);
 
     @GetMapping("/customers?projection=full")
     public PagedModel<Customer> allCustomers();
-
 }

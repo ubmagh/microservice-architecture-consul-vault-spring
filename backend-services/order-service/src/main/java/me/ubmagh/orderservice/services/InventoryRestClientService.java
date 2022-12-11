@@ -17,5 +17,4 @@ public interface InventoryRestClientService {
 
     @GetMapping("/products?projection=full")
     public PagedModel<Product> allProducts();
-
 }

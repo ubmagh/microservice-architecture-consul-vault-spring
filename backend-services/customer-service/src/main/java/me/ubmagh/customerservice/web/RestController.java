@@ -27,5 +27,4 @@ public class RestController {
         return Map.of( "p1", p1, "p2", p2, "x", x,"y", y );
     }
 
-
 }

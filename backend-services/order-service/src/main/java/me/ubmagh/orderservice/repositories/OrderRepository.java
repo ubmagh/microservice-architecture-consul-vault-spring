@@ -12,6 +12,4 @@ import java.util.List;
 public interface OrderRepository extends JpaRepository<Order, String> {
     @RestResource(path = "/byCustomerId")
     List<Order> findByCustomerId(@Param("customerId") String customerId);
-
-
 }
