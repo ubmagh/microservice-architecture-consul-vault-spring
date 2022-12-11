@@ -17,7 +17,7 @@
 
 # Contenu :
 
-> [👉 Partie Backend : les microservices](./frontend-ng/)
+> [👉 Partie Frontend : Angular](./frontend-ng/)
 
 > [👉 Partie Backend : les microservices](./backend-services/)
 
